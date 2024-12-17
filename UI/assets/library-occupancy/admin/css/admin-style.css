@@ -1,0 +1,102 @@
+.library-occupancy-admin {
+    max-width: 800px;
+    margin: 20px;
+}
+
+.library-occupancy-admin .form-table {
+    background: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+.library-occupancy-dashboard {
+    margin: 20px;
+}
+
+.dashboard-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.library-card {
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.library-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.library-header h2 {
+    margin: 0;
+    font-size: 1.4em;
+}
+
+.status-badge {
+    padding: 5px 10px;
+    border-radius: 15px;
+    font-size: 12px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.status-badge.open {
+    background: #4CAF50;
+    color: white;
+}
+
+.status-badge.closed {
+    background: #F44336;
+    color: white;
+}
+
+.occupancy-bar {
+    background: #f0f0f0;
+    border-radius: 4px;
+    height: 24px;
+    margin: 15px 0;
+    overflow: hidden;
+}
+
+.occupancy-fill {
+    background: linear-gradient(90deg, #4CAF50, #FFC107);
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+    transition: width 0.3s ease;
+}
+
+.library-details {
+    margin-top: 15px;
+}
+
+.message-form {
+    margin-top: 15px;
+}
+
+.message-input {
+    margin-bottom: 10px;
+}
+
+.message-input label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 500;
+}
+
+.message-input input {
+    width: 100%;
+}

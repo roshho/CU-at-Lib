@@ -1,0 +1,19 @@
+{
+    "$schema": "https://schemas.wp.org/trunk/block.json",
+    "apiVersion": 3,
+    "name": "library-occupancy/main",
+    "title": "Library Occupancy",
+    "category": "widgets",
+    "icon": "building",
+    "description": "Display library occupancy information",
+    "supports": {
+        "html": false
+    },
+    "styles": [],
+    "editorScript": [
+        "file:./public/js/block.js",
+        "file:./public/js/detailed-block.js"
+    ],
+    "editorStyle": "file:./public/css/block-style.css",
+    "style": "file:./public/css/block-style.css"
+}
