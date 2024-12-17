@@ -12,6 +12,10 @@ https://youtu.be/4l-oOLacSHw
 7) upload ``library-occupancy.zip`` into the plugin upload page in localwp website
 8) money $$$
 
+# Login deatils
+user: user
+pass: Temp1232
+
 # File Structure
 library-occupancy/
 ├── block.json
