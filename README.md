@@ -2,15 +2,17 @@
 https://youtu.be/4l-oOLacSHw
 
 # Instructions to run
-- You should only need to use ``app.py``, ``CUStudySeat.zip``, and ``library-occupancy.zip``. ``Assets`` and ``temp-working`` are working code files 
-1) navigate to folder with ``app.py``
-2) ``python app.py`` or ``python3 app.py`` to run the mock flask server
-3) download localwp
-4) import ``CUStudySeat.zip`` into localwp (i.e. importing the wordpress website into localwp``
-5) run the imported website in localwp
-6) install a plugin
-7) upload ``library-occupancy.zip`` into the plugin upload page in localwp website
-8) money $$$
+- You should only to use ``app.py``, ``CUStudySeat.zip``, and ``library-occupancy.zip``. ``Assets`` are working code files
+1) install localwp
+2) in terminal, ``pip install flask-cors flask`` and other possible dependncies needed
+3) (for mac & linux): in terminal run ``python -m venv venv``
+4) (for mac & linux): ``source venv/bin/active``
+5) navigate to folder with ``app.py``
+6) ``python app.py`` or ``python3 app.py`` to run the mock flask server
+7) download localwp
+8) import ``CUStudySeat.zip`` into localwp (i.e. importing the wordpress website into localwp``
+9) run the imported website in localwp
+10) money $$$
 
 # Login deatils
 user: user
