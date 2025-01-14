@@ -1,5 +1,5 @@
 # Pitch + Demo
-<iframe width="560" height="315" src="[https://youtu.be/4l-oOLacSHw](https://www.youtube.com/embed/4l-oOLacSHw )" frameborder="0" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://youtu.be/4l-oOLacSHw" frameborder="0" allowfullscreen></iframe>
 
 # Instructions to run
 - You should only to use ``app.py``, ``CUStudySeat.zip``, and ``library-occupancy.zip``. ``Assets`` are working code files
