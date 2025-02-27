@@ -19,6 +19,7 @@ user: user
 pass: Temp1232
 
 # File Structure
+```
 library-occupancy/
 ├── block.json
 ├── library-occupancy.php 
@@ -38,7 +39,8 @@ library-occupancy/
 │       └── block.js
 │       └── front-end.js
 ├── README.md
-└── app.py 
+└── app.py
+```
 
 - CUStudySeat.zip: the wordpress zip (import into local.wp)
 - library-occupancy.zip: current working version of plugin (import into local.wp website plugin)
