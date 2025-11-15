@@ -1,54 +1,178 @@
-# Pitch + Demo
-https://youtu.be/4l-oOLacSHw
+# CU@Lib: Columbia University Library Occupancy Plugin
 
-# Instructions to run
-- You should only to use ``app.py``, ``CUStudySeat.zip``, and ``library-occupancy.zip``. ``Assets`` are working code files
-1) install localwp
-2) in terminal, ``pip install flask-cors flask`` and other possible dependncies needed
-3) (for mac & linux): in terminal run ``python -m venv venv``
-4) (for mac & linux): ``source venv/bin/active``
-5) navigate to folder with ``app.py``
-6) ``python app.py`` or ``python3 app.py`` to run the mock flask server
-7) download localwp
-8) import ``CUStudySeat.zip`` into localwp (i.e. importing the wordpress website into localwp``
-9) run the imported website in localwp
-10) money $$$
+A WordPress plugin that displays real-time library occupancy data for Columbia University libraries, providing students and staff with up-to-date information about library capacity.
 
-# Login deatils
-user: user
-pass: Temp1232
+## 📋 Table of Contents
 
-# File Structure
+- [Project Objectives](#project-objectives)
+- [Demo](#demo)
+- [Features](#features)
+- [Getting Started](#getting-started)
+- [Installation](#installation)
+- [Login Credentials](#login-credentials)
+- [File Structure](#file-structure)
+- [Resources](#resources)
+
+## 🎯 Project Objectives
+
+Columbia University Libraries uses WiFi connection data to estimate library occupancy levels. However, the main website displaying this information is frequently under maintenance, leaving students without access to crucial capacity information.
+
+**Our Solution:** A WordPress plugin that bridges the gap between technical flexibility and ease of use.
+
+### Key Objectives:
+
+- **Reliability**: Provide continuous access to library occupancy data even when the main website is under repair
+- **Accessibility**: Enable non-technical library staff to manage content and notices without engineering support
+- **Real-time Updates**: Display library capacity information with higher frequency and accuracy
+- **User Empowerment**: Give librarians direct control over their web presence while maintaining technical sophistication
+- **Seamless Integration**: Work within WordPress ecosystem for easy deployment and maintenance
+
+This plugin balances technical capabilities with user-friendly management, ensuring students always have access to library occupancy information when they need it most.
+
+## 🎬 Demo
+
+### Screenshots
+
+![Frontend demo](images/frontend.gif "Frontend demo")
+
+![WordPress backend demo](images/wordpress-backend.gif "WordPress backend demo")
+
+### Video Demo
+
+Watch the full demonstration: [https://youtu.be/4l-oOLacSHw](https://youtu.be/4l-oOLacSHw)
+
+## ✨ Features
+
+- Real-time library occupancy tracking
+- Visual occupancy indicators
+- Admin dashboard for managing settings
+- Customizable display options
+- WordPress block integration
+- Mock Flask server for testing
+
+## 🚀 Getting Started
+
+### Prerequisites
+
+- [Local WP](https://localwp.com/) - WordPress development environment
+- Python 3.x
+- pip (Python package manager)
+
+## 📦 Installation
+
+**Note:** You only need to use `app.py`, `CUStudySeat.zip`, and `library-occupancy.zip`. The `assets` folder contains working code files for reference.
+
+### Step 1: Set Up Python Environment
+
+1. Install required Python packages:
+   ```bash
+   pip install flask-cors flask
+   ```
+
+2. **(Mac & Linux only)** Create and activate virtual environment:
+   ```bash
+   python -m venv venv
+   source venv/bin/activate
+   ```
+
+3. **(Windows)** Create and activate virtual environment:
+   ```powershell
+   python -m venv venv
+   .\venv\Scripts\Activate.ps1
+   ```
+
+### Step 2: Start Flask Server
+
+1. Navigate to the folder containing `app.py`
+2. Run the mock Flask server:
+   ```bash
+   python app.py
+   # or
+   python3 app.py
+   ```
+
+### Step 3: Set Up WordPress
+
+1. Download and install [Local WP](https://localwp.com/)
+2. Import `CUStudySeat.zip` into Local WP (this imports the WordPress website)
+3. Start the imported website in Local WP
+4. Install the `library-occupancy.zip` plugin through the WordPress admin panel or by extracting it to the plugins directory
+
+### Step 4: Activate and Configure
+
+1. Log in to WordPress admin (see credentials below)
+2. Navigate to Plugins and activate "Library Occupancy"
+3. Configure settings through the admin dashboard
+4. Add the Library Occupancy block to your desired pages
+
+## 🔐 Login Credentials
+
+**Username:** `user`  
+**Password:** `Temp1232`
+
+> ⚠️ **Security Note:** Change these credentials in a production environment!
+
+## 📁 File Structure
+
 ```
-library-occupancy/
-├── block.json
-├── library-occupancy.php 
-├── admin/
-│   ├── css/
-│   │   └── admin-style.css
-│   ├── views/
-│   │   ├── dashboard.phpW
-│   │   └── settings.php
-│   └── admin.php
-├── includes/
-│   └── functions.php
-├── public/
-│   ├── css/
-│   │   └── block-style.css
-│   └── js/
-│       └── block.js
-│       └── front-end.js
-├── README.md
-└── app.py
+CU-at-Lib/
+├── app.py                          # Flask mock server for testing
+├── README.md                       # Project documentation
+├── CUStudySeat.zip                 # Complete WordPress site (import to Local WP)
+├── library-occupancy.zip           # Plugin package (import to WordPress)
+├── assets/                         # Source code files
+│   └── library-occupancy/
+│       ├── block.json              # Block configuration
+│       ├── library-occupancy.php   # Main plugin file
+│       ├── admin/                  # Admin interface
+│       │   ├── admin.php
+│       │   ├── css/
+│       │   │   └── admin-style.css
+│       │   └── views/
+│       │       ├── dashboard.php
+│       │       └── settings.php
+│       ├── includes/               # Core functions
+│       │   └── functions.php
+│       └── public/                 # Frontend assets
+│           ├── css/
+│           │   └── block-style.css
+│           └── js/
+│               ├── block.js
+│               ├── detailed-block.js
+│               └── frontend.js
+└── images/                         # Demo screenshots and assets
 ```
 
-- CUStudySeat.zip: the wordpress zip (import into local.wp)
-- library-occupancy.zip: current working version of plugin (import into local.wp website plugin)
-- app.py: the flask server (ls to the folder and ``python3 app.py``)
-- asset: code for library-occupancy.zip 
-- temp-working: temp archive to keep past working frontend files
+### Key Components
 
-# Resources used
-- WordPress.tv 
-- https://www.youtube.com/watch?v=tYLfC8nNPLs
-- https://www.youtube.com/watch?v=JZslURB8tos
+| File/Folder | Description |
+|-------------|-------------|
+| `CUStudySeat.zip` | Complete WordPress site package for import into Local WP |
+| `library-occupancy.zip` | Current working version of the plugin for WordPress installation |
+| `app.py` | Flask server providing mock library occupancy data |
+| `assets/` | Source code for the library-occupancy plugin |
+| `images/` | Demo GIFs and screenshots |
+
+## 📚 Resources
+
+This project was built using the following resources:
+
+- [WordPress.tv](https://wordpress.tv/) - Official WordPress tutorials
+- [WordPress Plugin Development Tutorial](https://www.youtube.com/watch?v=tYLfC8nNPLs)
+- [WordPress Block Development](https://www.youtube.com/watch?v=JZslURB8tos)
+
+## 🤝 Contributing
+
+Contributions are welcome! Please feel free to submit a Pull Request.
+
+## 📄 License
+
+This project is part of Columbia University's initiative to improve library services.
+
+## 💬 Support
+
+For questions or issues, please open an issue in this repository.
+
+---
+
+**Made with ❤️ for Columbia University Libraries**
