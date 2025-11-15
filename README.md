@@ -2,10 +2,21 @@
 
 A WordPress plugin that displays real-time library occupancy data for Columbia University libraries, providing students and staff with up-to-date information about library capacity.
 
+## 🎬 Demo
+
+### Screenshots
+
+![Frontend demo](images/frontend.gif "Frontend demo")
+
+![WordPress backend demo](images/wordpress-backend.gif "WordPress backend demo")
+
+### Video Demo
+
+Watch the full demonstration: [https://youtu.be/4l-oOLacSHw](https://youtu.be/4l-oOLacSHw)
+
 ## 📋 Table of Contents
 
 - [Project Objectives](#project-objectives)
-- [Demo](#demo)
 - [Features](#features)
 - [Getting Started](#getting-started)
 - [Installation](#installation)
@@ -28,18 +39,6 @@ Columbia University Libraries uses WiFi connection data to estimate library occu
 - **Seamless Integration**: Work within WordPress ecosystem for easy deployment and maintenance
 
 This plugin balances technical capabilities with user-friendly management, ensuring students always have access to library occupancy information when they need it most.
-
-## 🎬 Demo
-
-### Screenshots
-
-![Frontend demo](images/frontend.gif "Frontend demo")
-
-![WordPress backend demo](images/wordpress-backend.gif "WordPress backend demo")
-
-### Video Demo
-
-Watch the full demonstration: [https://youtu.be/4l-oOLacSHw](https://youtu.be/4l-oOLacSHw)
 
 ## ✨ Features
 
